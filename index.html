@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Ruedas</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketchRueda.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+		}
+		canvas {
+			margin:auto;
+		}
+	</style>
+</head>
+<body style="font-family: Arial">
+	<div style="margin-top: 50px ">
+		<label style="margin-left: 140px">Bressenham</label>
+		<label style="margin-left: 350px">DDA</label>
+		<label style="margin-left: 400px">Punto Pendiente</label><br>
+		<input type="button" name="" onclick="masBres()" value="+" style="margin-left: 120px">
+		<input type="button" name="" onclick="menosBres()" value="-" style="">
+		<input type="button" name="" onclick="direccionBres()" value="Direccion" style="">
+
+		<input type="button" name="" onclick="masDDA()" value="+" style="margin-left: 270px ">
+		<input type="button" name="" onclick="menosDDA()" value="-" style="">
+		<input type="button" name="" onclick="direccionDDA()" value="Direccion" style="">
+
+		<input type="button" name="" onclick="masPP()" value="+" style="margin-left: 320px">
+		<input type="button" name="" onclick="menosPP()" value="-" style="">
+		<input type="button" name="" onclick="direccionPP()" value="Direccion" style="">
+	</div>
+</body>
+</html>
